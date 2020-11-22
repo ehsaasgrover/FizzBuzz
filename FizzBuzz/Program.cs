@@ -4,9 +4,14 @@ namespace FizzBuzz
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for (var i = 1; i < 100; i++)
+            {
+                Console.WriteLine(FizzBuzzGenerator.Generate(i));
+            }
         }
+
+        
     }
 }
